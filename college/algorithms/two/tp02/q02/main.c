@@ -186,37 +186,13 @@ void order_strings(char **arr, int tamanho)
 
 char *trim(char *str)
 {
-  if (str == NULL)
-    return NULL;
+  while (*str == ' ')
+    str++;
 
-  int start = 0;
-  while (str[start] != '\0' && isspace((unsigned char)str[start]))
-    start++;
-
-  if (str[start] == '\0')
-  {
-    str[0] = '\0';
-    return str;
-  }
-
-  int end = start;
-  while (str[end] != '\0')
-    end++;
-  end--;
-  while (end >= start && isspace((unsigned char)str[end]))
+  char *end = str + strlen(str) - 1;
+  while (end > str && *end == ' ')
     end--;
-
-  str[end + 1] = '\0';
-
-  if (start > 0)
-  {
-    int i = 0;
-    while (str[start] != '\0')
-    {
-      str[i++] = str[start++];
-    }
-    str[i] = '\0';
-  }
+  *(end + 1) = '\0';
 
   return str;
 }
@@ -227,7 +203,8 @@ char **string_to_array(char *str)
     return NULL;
   int total_length = len(str);
   int items_count = count_char(str, ',') + 1;
-  char **items = (char **)malloc((items_count + 1) * sizeof(char *));
+  char **items = (char **)malloc((items_count) * sizeof(char *));
+  
   if (!items)
     return NULL;
 
