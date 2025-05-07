@@ -1,0 +1,5 @@
+size,selection_sort_execution_time_s,selection_sort_comparisons,selection_sort_movements,insertion_sort_execution_time_s,insertion_sort_comparisons,insertion_sort_movements,bubble_sort_execution_time_s,bubble_sort_comparisons,bubble_sort_movements,quick_sort_execution_time_s,quick_sort_comparisons,quick_sort_movements
+100,0.000009,4950,95,0.000002,2654,2656,0.000017,4859,2559,0.000003,644,467
+1000,0.000935,499500,991,0.000095,247617,247615,0.001409,497547,246623,0.000034,11140,7161
+10000,0.109985,49995000,9992,0.008736,24868009,24868009,0.155912,49993347,24858019,0.000420,152761,84539
+100000,9.655394,4999950000,99984,0.857566,2504199202,2504199207,22.083855,4999655472,2504099219,0.005488,1978778,1047653

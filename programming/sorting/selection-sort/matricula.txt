@@ -1,4 +1,0 @@
-Tempo de execução: 0.0 ms
-Número de comparações: 45
-Número de trocas: 9
-Array ordenado: 

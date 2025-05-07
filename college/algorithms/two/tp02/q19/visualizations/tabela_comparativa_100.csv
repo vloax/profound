@@ -1,0 +1,5 @@
+,Tempo (s),Comparações,Movimentações
+Selection Sort,0.000009 s,4.950,95
+Insertion Sort,0.000002 s,2.654,2.656
+Bubble Sort,0.000017 s,4.859,2.559
+Quick Sort,0.000003 s,644,467
